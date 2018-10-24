@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {View, Text} from 'react-native';
 
-class WebsiteLinkPlaceholder extends Component {
+class MyClaims extends Component {
     constructor(props) {
         super(props);
     }
@@ -9,10 +9,10 @@ class WebsiteLinkPlaceholder extends Component {
     render() {
         return (
             <View>
-                <Text>TestSite.com</Text>
+                <Text>My Claims here</Text>
             </View>
         )
     }
 }
 
-export default WebsiteLinkPlaceholder;
+export default MyClaims;

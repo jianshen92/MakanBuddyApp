@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Button, View, Text} from 'react-native';
 
-class ProfileViewPlaceholder extends Component {
+class ProfileView extends Component {
     constructor(props) {
         super(props);
     }
@@ -15,4 +15,4 @@ class ProfileViewPlaceholder extends Component {
     }
 }
 
-export default ProfileViewPlaceholder;
+export default ProfileView;

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {View, Text} from 'react-native';
 
-class EmailPlaceholder extends Component {
+class Notifications extends Component {
     constructor(props) {
         super(props);
     }
@@ -9,10 +9,10 @@ class EmailPlaceholder extends Component {
     render() {
         return (
             <View>
-                <Text>Email here</Text>
+                <Text>Notifications here</Text>
             </View>
         )
     }
 }
 
-export default EmailPlaceholder;
+export default Notifications;

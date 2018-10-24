@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {View, Text} from 'react-native';
 
-class NotificationsPlaceholder extends Component {
+class WebsiteLink extends Component {
     constructor(props) {
         super(props);
     }
@@ -9,10 +9,10 @@ class NotificationsPlaceholder extends Component {
     render() {
         return (
             <View>
-                <Text>Notifications here</Text>
+                <Text>TestSite.com</Text>
             </View>
         )
     }
 }
 
-export default NotificationsPlaceholder;
+export default WebsiteLink;
