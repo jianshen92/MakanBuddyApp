@@ -35,6 +35,7 @@ class HomeView extends Component {
                     data={data}
                     renderItem={this.renderItem}
                     keyExtractor={item => item.id.toString()}
+                    scrollEventThrottle={16}
                 />
             </SafeAreaView>
         );
