@@ -13,6 +13,7 @@ const styles = StyleSheet.create({
     },
     itemDetailsRight:{
         flexDirection: 'column',
+        alignItems: 'flex-end'
     },
     backgroundImg: {
         width:'100%',
