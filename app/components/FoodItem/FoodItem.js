@@ -7,7 +7,9 @@ import { Card, Title} from 'react-native-paper';
 import styles from './styles';
 
 export default class FoodItem extends Component {
-    onPress = () => {};
+    onPress = () => {
+        this.props.navigation.navigate('Item');
+    };
 
     render() {
         const { item } = this.props;
@@ -37,5 +39,6 @@ export default class FoodItem extends Component {
 }
 
 FoodItem.propTypes = {
-    item: PropTypes.object
+    item: PropTypes.object,
+    navigation: PropTypes.object,
 };
