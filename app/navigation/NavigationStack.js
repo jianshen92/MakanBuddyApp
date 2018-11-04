@@ -44,7 +44,7 @@ const RNApp = createStackNavigator(
         }
     },
     {
-        initialRouteName: 'SignedIn'
+        initialRouteName: 'Login'
     }
 );
 
