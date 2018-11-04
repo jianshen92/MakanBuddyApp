@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 import styles from './styles';
 import ProfileView from 'app/components/ProfileView';
-import Notifications from 'app/components/Notifications';
+import Notifications from 'app/components/notifications/Notifications';
 import MyClaims from 'app/components/MyClaims';
 import Email from 'app/components/Email';
 import WebsiteLink from 'app/components/WebsiteLink';
