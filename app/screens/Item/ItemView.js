@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { View, Image } from 'react-native';
 import { Title, Text, Subheading, Divider, Button } from 'react-native-paper';
+import PropTypes from 'prop-types';
 
 import styles from './styles';
 
@@ -48,10 +49,14 @@ class ItemView extends Component {
                         </View>
                     </View>
                 </View>
-                <Button mode="contained" style={styles.claimButton}>Claim</Button>
+                <Button mode="contained" style={styles.claimButton} onPress={()=> this.props.navigation.navigate('Claim')}>Claim</Button>
             </View>
         );
     }
 }
+
+ItemView.propTypes = {
+    navigation: PropTypes.object,
+};
 
 export default ItemView;

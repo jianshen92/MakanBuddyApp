@@ -8,6 +8,7 @@ import Home from 'app/screens/Home';
 import Map from 'app/screens/Map';
 import More from 'app/screens/More';
 import Item from 'app/screens/Item';
+import Claim from 'app/screens/Claim';
 
 const HomeViewStack = createStackNavigator(
     {
@@ -18,10 +19,14 @@ const HomeViewStack = createStackNavigator(
         Item: {
             screen: Item,
             navigationOptions: { headerTitle: 'Item View', gesturesEnabled: false }
+        },
+        Claim: {
+            screen: Claim,
+            navigationOptions: { headerTitle: 'Claim View', gesturesEnabled: false }
         }
     },
     {
-        initialRouteName: 'Item'
+        initialRouteName: 'Home'
     }
 
 );
