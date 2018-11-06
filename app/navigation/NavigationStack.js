@@ -6,13 +6,35 @@ import Register from 'app/screens/Register';
 
 import Home from 'app/screens/Home';
 import Map from 'app/screens/Map';
-import More from 'app/screens/More'
+import More from 'app/screens/More';
+import Item from 'app/screens/Item';
+import Claim from 'app/screens/Claim';
 
-const SignedIn = createMaterialBottomTabNavigator(
+const HomeViewStack = createStackNavigator(
     {
         Home: {
             screen: Home,
             navigationOptions: { header: null, gesturesEnabled: false }
+        },
+        Item: {
+            screen: Item,
+            navigationOptions: { headerTitle: 'Item View', gesturesEnabled: false }
+        },
+        Claim: {
+            screen: Claim,
+            navigationOptions: { headerTitle: 'Claim View', gesturesEnabled: false }
+        }
+    },
+    {
+        initialRouteName: 'Home'
+    }
+
+);
+
+const SignedIn = createMaterialBottomTabNavigator(
+    {
+        Home: {
+            screen: HomeViewStack,
         },
         Map: {
             screen: Map,

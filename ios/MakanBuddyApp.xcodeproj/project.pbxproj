@@ -331,14 +331,14 @@
 			remoteGlobalIDString = 358F4ED71D1E81A9004DF814;
 			remoteInfo = RCTBlob;
 		};
-		DB825BDD217FC7D8003D1FF9 /* PBXContainerItemProxy */ = {
+		DB825C1721875DB9003D1FF9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8FF0B39B43C2427386116591 /* RNVectorIcons.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 5DBEB1501B18CEA900B34395;
 			remoteInfo = RNVectorIcons;
 		};
-		DB825BDF217FC7D8003D1FF9 /* PBXContainerItemProxy */ = {
+		DB825C1921875DB9003D1FF9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8FF0B39B43C2427386116591 /* RNVectorIcons.xcodeproj */;
 			proxyType = 2;
@@ -652,7 +652,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				67602AA1BA6A42C497256C96 /* Resources */,
-				DB825BB3217FC7D4003D1FF9 /* Recovered References */,
+				DB825BED21875CDA003D1FF9 /* Recovered References */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -679,7 +679,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DB825BB3217FC7D4003D1FF9 /* Recovered References */ = {
+		DB825BED21875CDA003D1FF9 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
 				FD7EF6F19D0B40049B7068EF /* libRNVectorIcons.a */,
@@ -688,11 +688,11 @@
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
-		DB825BD9217FC7D7003D1FF9 /* Products */ = {
+		DB825BEE21875CDD003D1FF9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DB825BDE217FC7D8003D1FF9 /* libRNVectorIcons.a */,
-				DB825BE0217FC7D8003D1FF9 /* libRNVectorIcons-tvOS.a */,
+				DB825C1821875DB9003D1FF9 /* libRNVectorIcons.a */,
+				DB825C1A21875DB9003D1FF9 /* libRNVectorIcons-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -857,7 +857,7 @@
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
 				{
-					ProductGroup = DB825BD9217FC7D7003D1FF9 /* Products */;
+					ProductGroup = DB825BEE21875CDD003D1FF9 /* Products */;
 					ProjectRef = 8FF0B39B43C2427386116591 /* RNVectorIcons.xcodeproj */;
 				},
 			);
@@ -1131,18 +1131,18 @@
 			remoteRef = ADBDB9261DFEBF0700ED6528 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		DB825BDE217FC7D8003D1FF9 /* libRNVectorIcons.a */ = {
+		DB825C1821875DB9003D1FF9 /* libRNVectorIcons.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libRNVectorIcons.a;
-			remoteRef = DB825BDD217FC7D8003D1FF9 /* PBXContainerItemProxy */;
+			remoteRef = DB825C1721875DB9003D1FF9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		DB825BE0217FC7D8003D1FF9 /* libRNVectorIcons-tvOS.a */ = {
+		DB825C1A21875DB9003D1FF9 /* libRNVectorIcons-tvOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libRNVectorIcons-tvOS.a";
-			remoteRef = DB825BDF217FC7D8003D1FF9 /* PBXContainerItemProxy */;
+			remoteRef = DB825C1921875DB9003D1FF9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

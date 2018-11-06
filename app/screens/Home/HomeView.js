@@ -3,6 +3,7 @@ import { FlatList } from 'react-native';
 import { Searchbar } from 'react-native-paper';
 import { SafeAreaView } from 'react-navigation';
 import styles from './styles';
+import PropTypes from 'prop-types';
 
 import FoodItem from 'app/components/FoodItem';
 
@@ -22,7 +23,7 @@ class HomeView extends Component {
     }
 
     renderItem = ({ item }) => {
-        return <FoodItem item={item} />;
+        return <FoodItem item={item} navigation={this.props.navigation}/>;
     };
 
     render() {
@@ -41,5 +42,10 @@ class HomeView extends Component {
         );
     }
 }
+
+HomeView.propTypes = {
+    navigation: PropTypes.object,
+};
+
 
 export default HomeView;
