@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
-import styles from './styles';
-import ProfileView from 'app/components/ProfileView';
-import Notifications from 'app/components/notifications/Notifications';
-import MyClaims from 'app/components/MyClaims';
-import Email from 'app/components/Email';
-import WebsiteLink from 'app/components/WebsiteLink';
+import { Button } from 'react-native-paper';
+
 
 class MoreView extends Component {
     constructor(props) {
@@ -13,14 +9,14 @@ class MoreView extends Component {
     }
 
     render() {
+        const {navigation} = this.props;
         return (
-            <View style={styles.container}>
-                <Text>More</Text>
-                <ProfileView/> 
-                <MyClaims/>
-                <Notifications/> 
-                <Email/> 
-                <WebsiteLink/>
+            <View>
+                <Button onPress={()=>navigation.navigate('Profile')}>Profile</Button>
+                <Button onPress={()=>navigation.navigate('MyClaims')}>MyClaims</Button>
+                <Button onPress={()=>navigation.navigate('Notifications')}>Notifications</Button>
+                <Button onPress={()=>navigation.navigate('Email')}>Email</Button>
+                <Button onPress={()=>navigation.navigate('WebsiteLink')}>WebsiteLink</Button>
             </View>
         );
     }

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {View} from 'react-native';
 import NotificationsList from './NotificationsList';
 
-class Notifications extends Component {
+class NotificationsView extends Component {
     constructor(props) {
         super(props);
     }
@@ -39,5 +39,5 @@ class Notifications extends Component {
     }
 }
 
-export default Notifications;
+export default NotificationsView;
 
