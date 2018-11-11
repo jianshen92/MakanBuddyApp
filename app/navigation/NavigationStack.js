@@ -10,16 +10,15 @@ import Home from 'app/screens/Home';
 import Map from 'app/screens/Map';
 import More from 'app/screens/More';
 
-//for HomeViewStack
+//for HomeViewStack (on Home screen)
 import Item from 'app/screens/Item';
 import Claim from 'app/screens/Claim';
 
-//for MoreViewStack
+//for MoreViewStack (on More screen)
 import Profile from 'app/screens/Profile';
 import MyClaims from 'app/screens/MyClaims';
 import Notifications from 'app/screens/Notifications';
-import Email from 'app/screens/Email';
-import WebsiteLink from 'app/screens/WebsiteLink';
+import Contact from 'app/screens/Contact';
 
 
 const MoreViewStack = createStackNavigator(
@@ -29,20 +28,21 @@ const MoreViewStack = createStackNavigator(
             navigationOptions: { header: null, gesturesEnabled: false }
         },
         Profile: {
-            screen: Profile
+            screen: Profile,
+            navigationOptions: { headerTitle: 'My Profile', gesturesEnabled: false}
         },
         MyClaims: {
-            screen: MyClaims
+            screen: MyClaims,
+            navigationOptions: { headerTitle: 'My Claims', gesturesEnabled: false}
         },
         Notifications: {
-            screen: Notifications
+            screen: Notifications,
+            navigationOptions: { headerTitle: 'Notifications', gesturesEnabled: false}
         },
-        Email: {
-            screen: Email
-        },
-        WebsiteLink: {
-            screen: WebsiteLink
-        },
+        Contact: {
+            screen: Contact,
+            navigationOptions: { headerTitle: 'Contact', gesturesEnabled: false}
+        }
     }, 
     {
         initialRouteName: 'More'

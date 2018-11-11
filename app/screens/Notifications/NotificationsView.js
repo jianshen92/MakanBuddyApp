@@ -15,21 +15,21 @@ class NotificationsView extends Component {
                     {
                         ID:0, 
                         titleText: 'remember to claim this', 
-                        descriptionText: 'food',
+                        descriptionText: 'food1',
                         navigationProperties: '',
                         notificationType:''
                     },
                     {
                         ID:1, 
                         titleText: 'remember to claim this', 
-                        descriptionText: 'money',
+                        descriptionText: 'food2',
                         navigationProperties: '',
                         notificationType:''
                     },
                     {
                         ID:2, 
                         titleText: 'remember to claim this', 
-                        descriptionText: 'sleep',
+                        descriptionText: 'food3',
                         navigationProperties: '',
                         notificationType:''
                     }

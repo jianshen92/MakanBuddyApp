@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import EmailView from './EmailView';
+import ContactView from './ContactView';
 import { connect } from 'react-redux';
 
-class EmailContainer extends Component {
+class ContactContainer extends Component {
     constructor(props) {
         super(props);
     }
 
     render() {
-        return <EmailView {...this.props} />;
+        return <ContactView {...this.props} />;
     }
 }
 
@@ -21,4 +21,4 @@ function mapDispatchToProps() {
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(EmailContainer);
+)(ContactContainer);

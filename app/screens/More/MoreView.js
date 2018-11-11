@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
-import { Button } from 'react-native-paper';
+import { View } from 'react-native';
+import { List } from 'react-native-paper';
 
 
 class MoreView extends Component {
@@ -8,15 +8,21 @@ class MoreView extends Component {
         super(props);
     }
 
+    ProfileLeft = () => <List.Icon icon='folder'/>;
+    MyClaimsLeft = () => <List.Icon icon='folder'/>;
+    NotificationsLeft = () => <List.Icon icon='folder'/>;
+    ContactLeft = () => <List.Icon icon='folder'/>;
+
     render() {
         const {navigation} = this.props;
         return (
             <View>
-                <Button onPress={()=>navigation.navigate('Profile')}>Profile</Button>
-                <Button onPress={()=>navigation.navigate('MyClaims')}>MyClaims</Button>
-                <Button onPress={()=>navigation.navigate('Notifications')}>Notifications</Button>
-                <Button onPress={()=>navigation.navigate('Email')}>Email</Button>
-                <Button onPress={()=>navigation.navigate('WebsiteLink')}>WebsiteLink</Button>
+                <List.Section>
+                    <List.Item left={this.ProfileLeft} title='Profile' onPress={()=>navigation.navigate('Profile')}/>
+                    <List.Item left={this.MyClaimsLeft} title='My Claims' onPress={()=>navigation.navigate('MyClaims')}/>
+                    <List.Item left={this.NotificationsLeft} title='Notifications' onPress={()=>navigation.navigate('Notifications')}/>
+                    <List.Item left={this.ContactLeft} title='Contact Us' onPress={()=>navigation.navigate('Contact')}/>
+                </List.Section>
             </View>
         );
     }

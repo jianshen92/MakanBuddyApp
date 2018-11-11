@@ -7,12 +7,13 @@ class NotificationItem extends Component {
         super(props);
     }
 
-    iconSelector = ()=>'folder';
+    iconSelector = () => 'folder';
     //TODO: add a selection of icons for different types of notifications later, or photos
 
     _left = props => <List.Icon {...props} icon={this.iconSelector(props)}/>;
 
     _onPress = () => {};
+    //TODO: Will add navigation to this function later
 
     render() {
         return (
