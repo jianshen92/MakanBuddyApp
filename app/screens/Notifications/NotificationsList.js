@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {List} from 'react-native-paper';
-import NotificationItem from './NotificationItem';
+import NotificationItem from 'app/components/NotificationItem';
 
 class NotificationsList extends Component {
     constructor(props) {

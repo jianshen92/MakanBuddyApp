@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {View} from 'react-native';
 import NotificationsList from './NotificationsList';
 
-class Notifications extends Component {
+class NotificationsView extends Component {
     constructor(props) {
         super(props);
     }
@@ -15,21 +15,21 @@ class Notifications extends Component {
                     {
                         ID:0, 
                         titleText: 'remember to claim this', 
-                        descriptionText: 'food',
+                        descriptionText: 'food1',
                         navigationProperties: '',
                         notificationType:''
                     },
                     {
                         ID:1, 
                         titleText: 'remember to claim this', 
-                        descriptionText: 'money',
+                        descriptionText: 'food2',
                         navigationProperties: '',
                         notificationType:''
                     },
                     {
                         ID:2, 
                         titleText: 'remember to claim this', 
-                        descriptionText: 'sleep',
+                        descriptionText: 'food3',
                         navigationProperties: '',
                         notificationType:''
                     }
@@ -39,5 +39,5 @@ class Notifications extends Component {
     }
 }
 
-export default Notifications;
+export default NotificationsView;
 
