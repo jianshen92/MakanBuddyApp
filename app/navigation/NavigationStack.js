@@ -20,6 +20,24 @@ import MyClaims from 'app/screens/MyClaims';
 import Notifications from 'app/screens/Notifications';
 import Contact from 'app/screens/Contact';
 
+//for ProfileViewStack
+import ProfileFieldItemEdit from 'app/screens/ProfileFieldItemEdit'
+
+const ProfileViewStack = createStackNavigator(
+    {
+        Profile: {
+            screen: Profile,
+            navigationOptions: { headerTitle: 'My Profile', gesturesEnabled: false }
+        },
+        ProfileFieldItemEdit: {
+            screen: ProfileFieldItemEdit,
+            navigationOptions: { headerTitle: 'Editing Profile', gesturesEnabled: false }
+        },
+    },
+    {
+        initialRouteName: 'Profile'
+    }
+)
 
 const MoreViewStack = createStackNavigator(
     {
@@ -28,8 +46,8 @@ const MoreViewStack = createStackNavigator(
             navigationOptions: { header: null, gesturesEnabled: false }
         },
         Profile: {
-            screen: Profile,
-            navigationOptions: { headerTitle: 'My Profile', gesturesEnabled: false}
+            screen: ProfileViewStack,
+            navigationOptions: { header: null, gesturesEnabled: false }
         },
         MyClaims: {
             screen: MyClaims,
